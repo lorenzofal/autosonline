@@ -1,6 +1,6 @@
-const autos = require('../data/')
+//const autos = require('../data/autos')
 module.exports = {
     index: (req, res)=>{
-        return res.render('index.ejs', {title: 'Pagina de Inicio', autos})
+        return res.render('index', {title: 'Pagina de Inicio' })
     }
 }

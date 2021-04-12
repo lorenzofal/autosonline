@@ -3,10 +3,9 @@ var router = express.Router();
 
 const homeController = require('../controllers/homeController');
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Mercado Libre' });
-});
-router.get('/', function(req, res, next) {
+router.get('/', homeController.index);
+
+/*router.get('/', function(req, res, next) {
   res.render('index', { title: 'Productos' });
 });
 router.get('/', function(req, res, next) {
@@ -27,4 +26,5 @@ router.get('/', function(req, res, next) {
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Respuestas a tu busqueda' });
 });
+*/
 module.exports = router;
